@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
+
+    <title>To-Do-List</title>
+</head>
+<body class="body">
+    <div class="OrdnerAnzeige">
+        
+        <div class="titleDiv">
+            <p class="title">To-Do-Folders</p>
+        </div>
+
+        <div class="kreuzDiv">
+            <div class="modal" id="kreuzModal">
+                <input class="inputOrdner" type="text" onkeydown="handleKeyDown(event)" placeholder="Name: ">
+            </div>
+            <button data-modal-target="#kreuzModal" class="kreuzButton">
+                <img class="imgKreuz" src="Bilder/white plus.svg">
+            </button>
+        </div>
+        
+        
+        <div class="Ordner">
+
+        </div>
+        
+        
+    </div>
+
+    <div class="todoAnzeige">
+        <p class="ordnerName"></p>
+
+        <div clase3s="to-do-Bar">
+
+            <input class="addNewCard" type="text" onkeydown="handleKeyDownToDos(event)" placeholder="Add a new To-Do:">
+            <input type="text" class="editTodoInput" placeholder="Rename todo" style="display:none;">
+
+
+        </div>
+
+        <div class="sortieren">
+
+            <div class="SelectButtons">
+
+                <button id="show-all" class="Button  buttonAll">All</button>
+                <button id="show-pending" class="Button  buttonPending">pending</button>
+                <button id="show-completed" class="Button  buttonCompleted">completed</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="To-Dos">
+        </div>
+
+
+    </div>
+</body>
+</html>
